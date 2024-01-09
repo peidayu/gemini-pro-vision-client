@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
 import AutoHeightTextArea from "./components/AutoHeightTextArea";
-import { Send, Image } from "lucide-react";
+import { Send, Image, Github } from "lucide-react";
 import cx from "classnames";
 import useImage2Text from "./common/useImage2Text";
 
@@ -29,6 +29,13 @@ export default function Home() {
   }, []);
   return (
     <div className="h-[100svh] bg-white">
+      <a
+        target="_blank"
+        href="https://github.com/peidayu/gemini-pro-vision-client"
+        className="github absolute right-4 top-4 text-gray-700 hover:text-gray-950"
+      >
+        <Github size="20" />
+      </a>
       <div className="flex flex-col h-full">
         <div className="messages-container flex-1 py-10 box overflow-y-auto">
           <div className="max-w-5xl max-lg:mx-4 mx-auto min-h-full flex flex-col items-center justify-center transition-all">
